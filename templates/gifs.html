@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    GIFs
+{% endblock %}
+
+{% block content %}
+
+    {% if r %}
+        alrighty:
+        <ul>
+            {% for gif in gifs %}
+                <li>{{ gif }}</li>
+                <h1>All gifs belong here</h1>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Have a nice day!
+    {% endif %}
+{% endblock %}

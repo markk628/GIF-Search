@@ -1,23 +1,34 @@
 from flask import Flask, render_template, request
 import requests
-import json
+
+
+lmt = 10
+api_key = "XP6HELPQDMSU"
 
 app = Flask(__name__)
-
 @app.route('/')
 def index():
-    """Return homepage."""
-    # TODO: Extract query term from url
-    
-    # TODO: Make 'params' dict with query term and API key
-
-    # TODO: Make an API call to Tenor using the 'requests' library
-
-    # TODO: Get the first 10 results from the search results
-
-    # TODO: Render the 'index.html' template, passing the gifs as a named parameter
-
     return render_template("index.html")
+
+@app.route('/test_html')
+def test_html():
+    search_bar_input = request.args.get('search')
+    query_string = "https://api.tenor.com/v1/search?q={}&key={}&limit={}".format(search_bar_input, api_key, lmt)
+
+    r = requests.get(query_string)
+    gifs = []
+    if r.status_code == 200:
+        # load the GIFs using the urls for the smaller GIF sizes
+        r_json = r.json()
+        result_json = r_json["results"]
+        for result in result_json:
+            gif_path = result["media"][0]["mediumgif"]["url"]
+            gifs.append(gif_path)
+        print(gifs)
+    else:
+        r_json = None
+    return render_template("gifs.html", gifs = gifs)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
