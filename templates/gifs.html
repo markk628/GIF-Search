@@ -1,7 +1,9 @@
+<head>
+    <link rel="stylesheet" href="static/gifs.css">
+</head>
 {% block content %}
-
-    {% if search_bar_input %}
-        alrighty:
+    {% if gifs %}
+        These gifs though:
         <ul>
             {% for gif in gifs %}
                 <img src="{{ gif }}">
@@ -11,4 +13,5 @@
     {% else %}
         Have a nice day!
     {% endif %}
+
 {% endblock %}
