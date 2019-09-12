@@ -1,15 +1,11 @@
-
-{% block title %}
-    GIFs
-{% endblock %}
-
 {% block content %}
 
     {% if search_bar_input %}
         alrighty:
         <ul>
             {% for gif in gifs %}
-                <li>{{ gif }}</li>
+                <img src="{{ gif }}">
+                <br>
             {% endfor %}
         </ul>
     {% else %}
