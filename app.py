@@ -27,7 +27,7 @@ def test_html():
         print(gifs)
     else:
         r_json = None
-    return render_template("gifs.html", gifs = gifs)
+    return render_template("gifs.html", gifs=gifs, search_bar_input=search_bar_input)
 
 
 if __name__ == '__main__':

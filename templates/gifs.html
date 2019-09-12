@@ -1,4 +1,3 @@
-{% extends 'index.html' %}
 
 {% block title %}
     GIFs
@@ -6,12 +5,11 @@
 
 {% block content %}
 
-    {% if r %}
+    {% if search_bar_input %}
         alrighty:
         <ul>
             {% for gif in gifs %}
                 <li>{{ gif }}</li>
-                <h1>All gifs belong here</h1>
             {% endfor %}
         </ul>
     {% else %}
