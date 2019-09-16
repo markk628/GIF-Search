@@ -1,3 +1,10 @@
 body {
-    background-color: aqua;
+    background-image: url(../static/gifsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
 }
