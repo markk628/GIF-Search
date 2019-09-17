@@ -1,9 +1,12 @@
 <head>
-    <link rel="stylesheet" href="static/gifs.css">
+    <title>GIF Search Results</title>
+    <link rel="stylesheet" href="../static/gifs.css">
 </head>
 {% block content %}
     {% if gifs %}
-        These gifs though:
+        <h1>
+            These gifs though:
+        </h1>
         <ul>
             {% for gif in gifs %}
                 <img src="{{ gif }}">
