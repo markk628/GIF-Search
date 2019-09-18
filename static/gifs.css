@@ -2,6 +2,7 @@ body {
     background-image: url(../static/gifsbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 h1 {
@@ -11,9 +12,9 @@ h1 {
 
 .gifbow-text {
     background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    text-align: center;
+    /* text-align: center; */
 }
 
-ul {
+/* ul {
     text-align: center;
-}
+} */
