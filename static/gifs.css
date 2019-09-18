@@ -8,3 +8,8 @@ h1 {
     font-size: 80px;
     color: white;
 }
+
+.gifbow-text {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    text-align: center;
+}
