@@ -12,9 +12,8 @@ h1 {
 
 .gifbow-text {
     background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    /* text-align: center; */
 }
 
-/* ul {
-    text-align: center;
-} */
+ul {
+    object-fit: contain;
+}
