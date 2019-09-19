@@ -2,20 +2,26 @@ body {
     background-image: url(c7a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.submitBtn {
+    color: blue;
+    background-color: green;
+  }
+.searchBar {
+    background-color: blue;
+    color: blue;
 }
 
 h1 {
     text-align: center;
     font-size: 100px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   }
-
-
-  div.form {
-    display: block;
-    text-align: center;
-}

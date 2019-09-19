@@ -1,6 +1,7 @@
 <head>
     <title>GIF Search Results</title>
     <link rel="stylesheet" href="../static/gifs.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 {% block content %}
     {% if gifs %}
@@ -16,7 +17,10 @@
             {% endfor %}
         </ul>
     {% else %}
-        Have a nice day!
+        <h1 class="wrong">
+        Error, try something else
+        </h1>
+        
     {% endif %}
 
 {% endblock %}

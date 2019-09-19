@@ -8,12 +8,18 @@ body {
 h1 {
     font-size: 80px;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .gifbow-text {
     background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
 }
 
+.wrong {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+
 ul {
     object-fit: contain;
 }
+
