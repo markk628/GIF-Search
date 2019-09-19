@@ -4,13 +4,15 @@
 </head>
 {% block content %}
     {% if gifs %}
-        <h1>
+        <h1 class="gifbow-text">
             These gifs though:
         </h1>
         <ul>
             {% for gif in gifs %}
                 <img src="{{ gif }}">
                 <br>
+
+                </br>
             {% endfor %}
         </ul>
     {% else %}

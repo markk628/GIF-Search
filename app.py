@@ -3,7 +3,7 @@ import requests
 
 
 lmt = 10
-api_key = "XP6HELPQDMSU"
+api_  = "XP6HELPQDMSU"
 
 app = Flask(__name__)
 @app.route('/')
@@ -13,7 +13,7 @@ def index():
 @app.route('/test_html')
 def test_html():
     search_bar_input = request.args.get('search')
-    query_string = "https://api.tenor.com/v1/search?q={}&key={}&limit={}".format(search_bar_input, api_key, lmt)
+    query_string = "https://api.tenor.com/v1/search?q={}&key={}&limit={}".format(search_bar_input, api_, lmt)
 
     r = requests.get(query_string)
     gifs = []
