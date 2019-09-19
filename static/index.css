@@ -5,13 +5,18 @@ body {
     text-align: center;
 }
 
+
 .submitBtn {
-    color: blue;
-    background-color: green;
+    color: white;
+    background-color: darkorchid;
+    border-style: none;
   }
+
 .searchBar {
-    background-color: blue;
-    color: blue;
+    width: 20%;
+    height: 20%;
+    color: orange;
+    border-style: none;
 }
 
 h1 {
@@ -19,7 +24,6 @@ h1 {
     font-size: 100px;
     color: white;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .rainbow-text {
