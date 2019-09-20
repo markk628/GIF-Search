@@ -19,6 +19,19 @@ h1 {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
 
+.submitBtn {
+    color: white;
+    background-color: darkorchid;
+    border-style: none;
+}
+
+.searchBar {
+    width: 20%;
+    height: 3%;
+    color: orange;
+    border-style: none;
+}
+
 ul {
     object-fit: contain;
 }
