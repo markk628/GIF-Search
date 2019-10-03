@@ -1,3 +1,4 @@
+/* makes the background render the picture I want to cover the page centered without repeating  */
 body {
     background-image: url(c7a.jpg);
     background-size: cover;
@@ -5,20 +6,21 @@ body {
     text-align: center;
 }
 
-
+/* makes submit button darkorchid and the searchbar white */
 .submitBtn {
     color: white;
     background-color: darkorchid;
     border-style: none;
 }
 
+/* code for the size of search bar and font color */
 .searchBar {
     width: 20%;
     height: 20%;
     color: orange;
     border-style: none;
 }
-
+/* code for title of the page and position */
 h1 {
     text-align: center;
     font-size: 100px;
